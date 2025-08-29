@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo List 실습</title>
+  <link rel="stylesheet" href="./01_todolist.css">
+  <script src="./01_todolist.js"></script>
+</head>
+<body>
+  <div class="todo-container">
+    <h1>나의 Todo List</h1>
+    <div class="input-group">
+      <input type="text" id="todo-input" placeholder="새로운 할 일을 추가하세요 ✌️">
+      <button id="add-btn">추가</button>
+    </div>
+    <ul id="todo-list" class="todo-list">
+      <!-- 버튼을 눌렀을 때 <li> 태그가 추가 되어야 함.-->
+        <li class="todo-item">
+          <input type="checkbox" class="completed">
+          <span class="todo-text">todolist만들기</span>
+          <button class="delete-btn">삭제</button>
+        </li>
+    </ul>
+  </div>
+  <script>
+    // DOM 요소 가져오기 위한 변수 선언 및 초기화
+    const todoInput = document.getElementById('todo-input');
+    const addBtn = document.getElementById('add-btn');
+    const todoList = document.getElementById('todo-list');
+
+    // 처음 페이지에 들어갔을 때 localStorage를 참조해서 기존 todo 데이터가 있다면 가지고 와야겠네요.
+    let todos = JSON.parse(localStorage.getItem('todos')) || [];
+
+    // Todo 리스트를 불러오는 과정이 필요합니다.
+    function renderTodos() {
+      
+
+    }
+
+  </script>
+</body>
+</html>
