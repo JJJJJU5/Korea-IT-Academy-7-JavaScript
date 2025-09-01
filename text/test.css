@@ -1,0 +1,57 @@
+:root {
+  --primary-color : #000000;
+  --secondary-color : #3b89ff;
+  --background-color : #e3f2fd;
+  --light-gray : #ffffff;
+  --completed-color : #ffffff;
+  --font-family: 'Noto Sans KR', sans-serif;
+}
+body{
+  font-family: var(--font-family);
+  background-color: var(--background-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  color: var(--primary-color);
+} 
+.sign-container {
+  padding: 2.5rem;
+  border-radius: 15px;
+  width: 100%;
+  background-color: #3b89ff;
+  max-width: 500px;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+.input-group {
+  display: flex;
+  gap: 10px;
+  flex-direction: column; 
+  padding: 15px;
+}
+.input-group input {
+  border-radius: 8px;
+  border: #3b89ff;
+  flex-grow: 1;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+}
+.input-group button {
+  background-color: var(--light-gray);
+  border: #3b89ff;
+  border-radius: 4%;
+  cursor: pointer;
+  padding: 4px;
+  transition: background-color 0.3s, transform 0.1s;
+  font-weight: bold;
+}
+.input-group button:hover {
+  background-color: #5069bd;
+}
+.input-group button:active{
+  transform: scale(0.98);
+}
