@@ -86,7 +86,7 @@ h1 {
   display: flex;
   align-items: center;
   padding: 15px;
-  background: #f7f9fa;
+  background: #7e8486;
   border-radius: 8px;
   margin-bottom: 10px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -97,10 +97,10 @@ h1 {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
 
-.todo-item.completed {
+.todo-item.completed {  /* .js에서 26번과 연결된다. */ 
   background-color: #e9e9e9;
 }
-
+/* li 태그의 background 컬러 말고, 그 자식인 span 태그 부분에 속성 추가*/
 .todo-item.completed .todo-text {
   text-decoration: line-through;
   color: var(--completed-color);
